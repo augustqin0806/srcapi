@@ -1,0 +1,29 @@
+# Node modules
+node_modules
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+
+# 本地环境文件
+.env
+.env.local
+.env.development
+.env.test
+
+# IDE 文件
+.vscode
+.idea
+
+# Git 文件
+.git
+.gitignore
+
+# 日志和临时文件
+logs
+*.log
+tmp
+.cache
+
+# Strapi build 产物（Builder 阶段会重新生成）
+build

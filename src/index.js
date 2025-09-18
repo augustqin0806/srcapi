@@ -1,23 +1,23 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  /**
-   * An asynchronous register function that runs before
-   * your application is initialized.
-   *
-   * This gives you an opportunity to extend code.
-   */
-  register(/*{ strapi }*/) {},
+    /**
+     * An asynchronous register function that runs before
+     * your application is initialized.
+     *
+     * This gives you an opportunity to extend code.
+     */
+    register(/*{ strapi }*/) {},
 
-  /**
-   * An asynchronous bootstrap function that runs before
-   * your application gets started.
-   *
-   * This gives you an opportunity to set up your data model,
-   * run jobs, or perform some special logic.
-   */
-  bootstrap(/*{ strapi }*/) {
-    const blurhashMw = require('./middlewares/blurhash');
-    strapi.db.lifecycles.subscribe(blurhashMw({ strapi }));
-  },
+    /**
+     * An asynchronous bootstrap function that runs before
+     * your application gets started.
+     *
+     * This gives you an opportunity to set up your data model,
+     * run jobs, or perform some special logic.
+     */
+    bootstrap(/*{ strapi }*/) {
+        // const blurhashMw = require("./middlewares/blurhash/index.js");
+        // strapi.db.lifecycles.subscribe(blurhashMw({ strapi }));
+    },
 };
